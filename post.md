@@ -16,6 +16,20 @@ The goal of this lab is to design a more complex circuit and to learn more about
 ## Project Steps
 
 ## Part 1: Voltage Divider
+Single Resistor Circuit :
+We connect one end of the resistor to the +5V terminal of the power supply.
+Then connect the other end of the resistor to the GND terminal of the power supply.
+Two Resistors in Series Circuit :
+Connect one end of R1 to the +5V terminal of the power supply.
+Connect the other end of R1 to one end of R2.
+Connect the other end of R2 to the GND terminal of the power supply.
+Potentiometer Circuit :
+We wire the leftmost terminal of the potentiometer to the GND terminal of the power supply.
+Wire the rightmost terminal of the potentiometer to the +5V terminal of the power supply.
+Choose one of the middle terminals as the output voltage V. This terminal will provide the desired voltage based on the position of the potentiometer knob.
+Connect the output terminal of the potentiometer to the desired point in your circuit where you want to measure the voltage.
+The result is shown in the picture below.
+And now we are ready for the next step.
 
 ## Part 2: Potentiometer with Arduino
 
