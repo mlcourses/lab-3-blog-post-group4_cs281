@@ -22,6 +22,7 @@ This week we'll explore...
 2. Voltage Divider
 
 3. Potentiometer with Arduino
+
   We used the Arduino to convert the analog input of the potentiometer into a digital representation.
 
   First, we connected the potentiometer to the Arduino to calibrate it. 
