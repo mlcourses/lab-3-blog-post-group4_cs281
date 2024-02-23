@@ -68,7 +68,8 @@ After we constructed our circuit, we tested it with the potentiometer. While it 
 
 https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/ef681913-2d08-4804-b85d-348c54bdca82
 
-#### Conclusion
+## Conclusion
+Through this lab. we learnt the concept of a voltage divider, understood what a potentiometer does and finally integrating it into a circuit and displaying the output of a potentiometer using a complex circuit that powers 7-segment display.
 
 
 
