@@ -40,10 +40,10 @@ First, we connected the potentiometer to the Arduino to calibrate it.
 We wrote the included program into our Arduino, and then began to test it by turning the knob of the potentiometer. As we turned the knob, we saw on our computer that the Arduino was converting it to values between 0 and 5. This was a digital output, the values 0 to 5 were actually 3 binary bits, which could be written to represent values from 0 to 7. These three binary bits are the input into our circuit which converts this binary information into its proper representation on the 7 Segment Display.
 
 ## Part 3: 7-segment display circuit
-# Goal
+#### Goal
 The goal of this part is to design construct a 7-segment circuit to get used to building complex circuits with more than one output. In this case, we have 7! Through the construction of the 7-segment circuit, we learnt how to use the same gates twice (we had multiple AND and OR gates in our Logisim designs but only used 4 when physically building the circuit). Being able to build this circuit means we are one step closer to building more complex circuits.
 
-# Project Steps
+#### Project Steps
 
 A 7 segment circuit is basically 7 separate LED lights (which we number 1-7) that turn on and off based on different inputs. We then code these numbers into 3-bit binary numbers (1 = 001, 2 = 010, etc.) and make a truth table for each LED light corresponding to each variation of these bits. The truth table would look like the following:
 
@@ -66,13 +66,13 @@ After the wiring diagram is complete, we got onto the construction of the circui
 
 ## Image of circuit
 
-# Testing
+#### Testing
 
 After we constructed our circuit, we tested it with the potentiometer. While it was probably wiser to test each LED segment, we decided to construct the entire thing before testing it. The potentiometer starts off at 0 and it changes to 1, 2, 3, 4 and 5 after the knob is turned little by little. Our 7-segment display reflects this. The video below shows the arduino output as the knob is turned and how our 7-segment circuit responds to the arduino output.
 
 ## Video of complete 7-segment circuit
 
-## Conclusion
+#### Conclusion
 
 
 
