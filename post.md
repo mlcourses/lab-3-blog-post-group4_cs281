@@ -15,24 +15,18 @@ The goal of this lab is to design a more complex circuit and to learn more about
 
 ## Project Steps
 
-## Part 1: Voltage Divider
-Single Resistor Circuit :
-We connect one end of the resistor to the +5V terminal of the power supply.
-Then connect the other end of the resistor to the GND terminal of the power supply.
-Two Resistors in Series Circuit :
-Connect one end of R1 to the +5V terminal of the power supply.
-Connect the other end of R1 to one end of R2.
-Connect the other end of R2 to the GND terminal of the power supply.
-Potentiometer Circuit :
-We wire the leftmost terminal of the potentiometer to the GND terminal of the power supply.
-Wire the rightmost terminal of the potentiometer to the +5V terminal of the power supply.
-Choose one of the middle terminals as the output voltage V. This terminal will provide the desired voltage based on the position of the potentiometer knob.
-Connect the output terminal of the potentiometer to the desired point in your circuit where you want to measure the voltage.
-The result is shown in the picture below.
-And now we are ready for the next step.
+## Part 1: Voltage Divider and Potentiometer
+We first designed a simple circuit for the potentiometer. The potentiometer is another part of the breadboard that can supply a variable amount of voltage. A potentiometer works based on the concept of the voltage divider, which relies on two resistors and an output voltage in the middle of the two. A voltage divider can be represented by the diagram below:
+
+<img width="340" alt="voltage divider concept" src="https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/1727542b-5ca9-4c7c-bb32-351f84684972">
+
+The voltage divider (the V in the diagram) is the output voltage of the circuit. Ohm's law gives us the equation: V = IR, where V is voltage, I is current and R is resistance. Rearranging the formula, we have V1 (the part with R1 in the diagram before V divides it) = I x R1 and V2 (the part with R2 in the diagram before V divides it) = I x R2. Rearranging the equation with I as a common factor, we have V = R1/(R1+R2) * Vcc. This equation shows that we can have variable voltage by changing the values of R1 and R2.
+
+The concept of a potentiometer is similar, with there being a knob that turns. This is represented by V in the image above. By changing the location of the output voltage, we can change the resistance combination of R1 and R2, and thus, make voltage variable. The picture below shows the potentiometer on our breadboard, with Vcc and GND attached.
+
+<img width="261" alt="potentiometer" src="https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/aba7d6c0-2065-4ab3-b646-db3e23e3ddfe">
 
 ## Part 2: Potentiometer with Arduino
-
 We used the Arduino to convert the analog input of the potentiometer into a digital representation.
 
 First, we connected the potentiometer to the Arduino to calibrate it. 
@@ -49,8 +43,8 @@ A 7 segment circuit is basically 7 separate LED lights (which we number 1-7) tha
 
 <img width="678" alt="truth table" src="https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/c53a92bc-b7bb-4bd3-85e4-127958b359b0">
 
-
 From this truth table, we then wrote Sum of Product (SOP) expression for each LED segment. SOP expressions are a combination of possible inputs that would result in the light turning on and combines these inputs using the OR operators. They are then simplified, either by using boolean algebra rules or by K-maps, and are then used to construct circuits. For example, the SOP expression for LED light B will be:
+
 <img width="357" alt="SOP for LED B" src="https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/e5f152ec-bbcf-4968-8cd6-74936cf04120">
 
 <img width="433" alt="Kmap for LEDB" src="https://github.com/mlcourses/lab-3-blog-post-group4_cs281/assets/67582698/a8a01939-d7b4-4026-9b88-42354d0c80f8">
